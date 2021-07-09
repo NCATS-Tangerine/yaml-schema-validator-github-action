@@ -5,9 +5,9 @@ strict=''
 schema=${INPUT_SCHEMA:-$1}
 target=${INPUT_TARGET:-$2}
 
-if [ -n "${INPUT_STRICT:-}" ]
+if [ "${INPUT_STRICT:-}" ]
 then
-  strict='--strict'
+  strict='--no-strict'
 fi
 
 #if [ ! -e ${schema} ]
