@@ -10,11 +10,11 @@ then
   strict='--strict'
 fi
 
-if [ ! -e ${schema} ]
-then
-  >&2 echo "Schema does not exist: $schema"
-  exit 1
-fi
+#if [ ! -e ${schema} ]
+#then
+#  >&2 echo "Schema does not exist: $schema"
+#  exit 1
+#fi
 
 if [ ! -e ${target} ]
 then
